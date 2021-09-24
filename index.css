@@ -1,0 +1,30 @@
+.normal {
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+}
+.box {
+
+    display: inline-block;
+    text-align: left;
+}
+
+* {
+    margin-top: 7px;
+}
+
+div {
+    padding: 30px;
+}
+
+h1, h4 {
+    padding-left: 40px;
+}
+
+#btn {
+    margin-left: 200px;
+}
+
+label {
+    vertical-align: top;
+}

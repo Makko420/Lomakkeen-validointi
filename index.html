@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <h1>Rekisteröitymislomake</h1>
+        <h4>Siirry kentästä toisenn tab-näppäimellä</h4>
+        <form action="">
+            <label class="normal" for="username">Käyttäjä ID:</label>
+            <input type="text" id="username" name="username" size="9"><br>
+            <label class="normal" for="pwd">Salasana:</label>
+            <input type="password" id="pwd" name="pwd" size="9"><br>
+            <label class="normal" for="name">Nimi:</label>
+            <input type="text" id="name" name="name" size="27"><br>
+            <label class="normal" for="osoite">Osoite:</label>
+            <input type="text" id="osoite" name="osoite" size="27"><br>
+
+            <label class="normal" for="maa">Maa:</label>
+            <select name="maa" id="maa">
+                <option value="valitse">(Valitse maa)</option>
+                <option value="suomi">Suomi</option>
+                <option value="ruotsi">Ruotsi</option>
+                <option value="muu">Muu</option>
+            </select><br>
+
+            <label class="normal" for="postNmbr">Postinumero:</label>
+            <input type="text" id="postNmbr" name="postNmbr" size="14"><br>
+            <label class="normal" for="gmail">Sähköposti:</label>
+            <input type="email" id="gmail" name="gmail" size="27"><br>
+
+            <label class="normal" for="sukupuoli">Sukupuoli:</label>
+            <input type="radio" id="mies" name="sukupuoli" value="1">
+            <label class="box" for="mies">Mies</label>
+            <input type="radio" id="nainen" name="sukupuoli" value="1">
+            <label class="box" for="nainen">Nainen</label><br>
+
+            <label class="normal" for="kieli">Kieli:</label>
+            <input type="checkbox" id="kieli1" name="kieli" value="suomi" checked>
+            <label class="box" for="kieli1">Suomi</label>
+            <input type="checkbox" id="kieli2" name="kieli" value="muu">
+            <label class="box" for="kieli2">Muu kuin suomi</label><br>
+
+            <p class="info">
+            <label class="normal" for="lisatietoja">Lisätietoja:</label>
+            <textarea name="lisatietoja" id="lisatietoja" cols="30" rows="7"></textarea><br>
+            </p>
+            
+            <input type="button" name="laheta" value="Lähetä" onclick="validate()" id="btn">
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
